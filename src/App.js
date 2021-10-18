@@ -15,7 +15,7 @@ class App extends Component {
         </section>
         <Switch>
           <Route path="/about" component={ About } />
-          <Route path="/users" component={ Users } />
+          <Route path="/users" render={ () => <Users greetingsMessage="Good Morning" /> } />
           <Route path="/" component={ Home } />
         </Switch>
       </BrowserRouter>
