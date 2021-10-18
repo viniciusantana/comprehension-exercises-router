@@ -15,7 +15,8 @@ class App extends Component {
         </section>
         <Switch>
           <Route path="/about" component={ About } />
-          <Route path="/users" render={ () => <Users greetingsMessage="Good Morning" /> } />
+          <Route path="/users/:id" render={ (props) => <Users {...props} greetingsMessage="Good Morning" /> } />
+          <Route path="/users/" render={ () => <Users  greetingsMessage="Good Morning" /> } />
           <Route path="/" component={ Home } />
         </Switch>
       </BrowserRouter>
