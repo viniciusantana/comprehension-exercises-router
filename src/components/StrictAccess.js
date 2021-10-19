@@ -7,7 +7,7 @@ class StrictAcess extends Component {
     const login = username === 'joão' && password === '123';
     return (
       <div>
-        {login ? "Welcome João" : <Redirect to="/" /> }
+        {login ? <h1>"Welcome João"</h1> : <Redirect to="/" /> }
       </div>
     )
   }
